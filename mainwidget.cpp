@@ -23,7 +23,8 @@ mainWidget::mainWidget(QWidget *parent) : QWidget(parent)
 
     QPushButton* exitApp = new QPushButton("&Quit");
     connect(exitApp,SIGNAL(clicked()),qApp,SLOT(quit()));
-
+		
+    QPushButton* msgtoGit new QPushButton;
 
     QPushButton* ChangeRates = new QPushButton("&Change Constants");
     connect(ChangeRates,SIGNAL(clicked()),this,SLOT(constants()));
